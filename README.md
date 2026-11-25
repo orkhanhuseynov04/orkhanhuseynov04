@@ -1,10 +1,8 @@
 # Salam, mən Orkhan! 👋
 
 <p align="center">
-  <img src="dist/trex-run.svg" alt="T-Rex running animation" width="820"/>
+  <img src="dist/trex-run.svg" alt="Chrome dino style T-Rex animation" width="820"/>
 </p>
-
----
 
 ## Haqqımda
 
@@ -14,10 +12,12 @@
 
 ## Layihələrim
 
-<!-- burada layihələrinizi siyahıya ala bilərsiniz -->
+<!-- layihələrinizi burada siyahıya ala bilərsiniz -->
 
 ## Əlaqə
 
-<p align="left">
-  <a href="https://github.com/orkhanhuseynov04">GitHub</a>
-</p>
+- GitHub: [@orkhanhuseynov04](https://github.com/orkhanhuseynov04)
+
+---
+
+<sub>Bu animasiya `scripts/generate.js` faylı ilə yaradılır. Yenidən qurmaq üçün: `node scripts/generate.js`</sub>

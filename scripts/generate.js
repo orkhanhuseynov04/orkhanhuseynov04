@@ -7,8 +7,8 @@ const OFFSET = Number(process.env.T_OFFSET || 0);
 
 const S = 4;                  // Dino pixel size
 const W = 820;
-const H = 200;
-const GROUND_Y = 180;
+const H = 230;
+const GROUND_Y = 208;
 const DINO_X = 70;
 const LEG_H = 4 * S;
 
@@ -21,7 +21,7 @@ const START_X = 900;          // spawn x
 const END_X = -160;           // parked x (fully off screen)
 const SPEED = (START_X - END_X) / TRAVEL;
 
-const JUMP_PEAK = 64;
+const JUMP_PEAK = 88;
 
 const C = {
   bg: "#000000",
@@ -182,13 +182,15 @@ function contactEnd(n) {
   return (START_X - (LEG_L - (n - 1) * SLOT - CACTUS_W)) / SPEED;
 }
 
-const AIRTIME = { 1: 0.55, 2: 0.70, 3: 0.90 };
+const AIRTIME = { 1: 0.62, 2: 0.82, 3: 1.02 };
+// take off a little earlier than the geometric middle of the overlap
+const JUMP_LEAD = 0.05;
 
 const keyTimes = [0];
 const values = [`${DINO_X} 0`];
 
 for (const ob of SCHEDULE) {
-  const c = ((contactStart() + contactEnd(ob.n)) / 2 + ob.t) % MASTER;
+  const c = ((contactStart() + contactEnd(ob.n)) / 2 + ob.t - JUMP_LEAD) % MASTER;
   const T = AIRTIME[ob.n];
   const pts = [
     [c - T * 0.5, 0],
@@ -218,8 +220,8 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
   <rect width="${W}" height="${H}" fill="${C.bg}"/>
 
   <!-- clouds -->
-  ${cloudSprite(40, -8)}
-  ${cloudSprite(18, -19)}
+  ${cloudSprite(52, -8)}
+  ${cloudSprite(26, -19)}
 
   <!-- scrolling ground (dashes travel left at the same speed as the cacti) -->
   <line x1="0" y1="${GROUND_Y}" x2="${W}" y2="${GROUND_Y}"

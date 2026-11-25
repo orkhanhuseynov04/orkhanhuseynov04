@@ -7,10 +7,11 @@ const OFFSET = Number(process.env.T_OFFSET || 0);
 
 const S = 4;                  // pixel size
 const W = 820;
-const H = 168;
-const GROUND_Y = 156;
+const H = 200;
+const GROUND_Y = 180;
 const DINO_X = 70;
 const LEG_H = 4 * S;
+const CACTUS_SCALE = 5;
 
 const C = {
   bg: "#000000",
@@ -118,7 +119,7 @@ const legs = `
 
 // ---------- obstacles ----------
 function cactusSprite(beginSec) {
-  const scale = 3;
+  const scale = CACTUS_SCALE;
   const w = CACTUS[0].length * scale;
   const h = CACTUS.length * scale;
   const oy = GROUND_Y - h;
@@ -148,21 +149,21 @@ function cloudSprite(y, beginSec) {
 
 // two jumps per 4s loop, each straddling the moment a cactus passes the dino
 const JUMP_TIMES =
-  "0; 0.12; 0.20; 0.28; 0.38; 0.50; 0.62; 0.70; 0.78; 0.88; 1";
-const JUMP_HEIGHTS = [0, 0, -42, -48, -42, 0, 0, -42, -48, -42, 0];
+  "0; 0.19; 0.25; 0.325; 0.40; 0.46; 0.69; 0.75; 0.825; 0.90; 0.96; 1";
+const JUMP_HEIGHTS = [0, 0, -54, -60, -54, 0, 0, -54, -60, -54, 0, 0];
 const JUMP_VALUES = JUMP_HEIGHTS.map((dy) => `${DINO_X} ${dy}`).join("; ");
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="T-Rex running animation">
   <rect width="${W}" height="${H}" fill="${C.bg}"/>
 
   <!-- clouds -->
-  ${cloudSprite(26, -8)}
-  ${cloudSprite(12, -19)}
+  ${cloudSprite(40, -8)}
+  ${cloudSprite(18, -19)}
 
-  <!-- scrolling ground -->
+  <!-- scrolling ground (dashes travel left, same speed as the cacti) -->
   <line x1="0" y1="${GROUND_Y}" x2="${W}" y2="${GROUND_Y}"
-        stroke="${C.ground}" stroke-width="4" stroke-dasharray="30 18">
-    <animate attributeName="stroke-dashoffset" values="0;-48" dur="0.2s"
+        stroke="${C.ground}" stroke-width="4" stroke-dasharray="34 20">
+    <animate attributeName="stroke-dashoffset" values="0;54" dur="0.2216s"
              repeatCount="indefinite" begin="${at(0)}"/>
   </line>
 

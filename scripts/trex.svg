@@ -1,28 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="820" height="168" viewBox="0 0 820 168" role="img" aria-label="T-Rex running animation">
-  <rect width="820" height="168" fill="#000000"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="200" viewBox="0 0 820 200" role="img" aria-label="T-Rex running animation">
+  <rect width="820" height="200" fill="#000000"/>
 
   <!-- clouds -->
   
-  <g transform="translate(860 26)">
+  <g transform="translate(860 40)">
     <animateTransform attributeName="transform" type="translate"
-      values="860 26; -120 26" dur="26s" begin="-8s" repeatCount="indefinite"/>
+      values="860 40; -120 40" dur="26s" begin="-8s" repeatCount="indefinite"/>
     <rect x="6" y="0" width="12" height="3" fill="#173a22"/>
     <rect x="3" y="3" width="18" height="3" fill="#173a22"/>
     <rect x="0" y="6" width="27" height="3" fill="#173a22"/>
   </g>
   
-  <g transform="translate(860 12)">
+  <g transform="translate(860 18)">
     <animateTransform attributeName="transform" type="translate"
-      values="860 12; -120 12" dur="26s" begin="-19s" repeatCount="indefinite"/>
+      values="860 18; -120 18" dur="26s" begin="-19s" repeatCount="indefinite"/>
     <rect x="6" y="0" width="12" height="3" fill="#173a22"/>
     <rect x="3" y="3" width="18" height="3" fill="#173a22"/>
     <rect x="0" y="6" width="27" height="3" fill="#173a22"/>
   </g>
 
-  <!-- scrolling ground -->
-  <line x1="0" y1="156" x2="820" y2="156"
-        stroke="#2c4a34" stroke-width="4" stroke-dasharray="30 18">
-    <animate attributeName="stroke-dashoffset" values="0;-48" dur="0.2s"
+  <!-- scrolling ground (dashes travel left, same speed as the cacti) -->
+  <line x1="0" y1="180" x2="820" y2="180"
+        stroke="#2c4a34" stroke-width="4" stroke-dasharray="34 20">
+    <animate attributeName="stroke-dashoffset" values="0;54" dur="0.2216s"
              repeatCount="indefinite" begin="0s"/>
   </line>
 
@@ -30,80 +30,80 @@
   
   <g transform="translate(900 0)">
     <animateTransform attributeName="transform" type="translate"
-      values="900 0; -61 0" dur="4s" begin="0s" repeatCount="indefinite"/>
-    <rect x="6" y="129" width="9" height="3" fill="#1fa84a"/>
-      <rect x="6" y="132" width="9" height="3" fill="#1fa84a"/>
-      <rect x="0" y="135" width="3" height="3" fill="#1fa84a"/>
-      <rect x="6" y="135" width="9" height="3" fill="#1fa84a"/>
-      <rect x="0" y="138" width="3" height="3" fill="#1fa84a"/>
-      <rect x="6" y="138" width="9" height="3" fill="#1fa84a"/>
-      <rect x="18" y="138" width="3" height="3" fill="#1fa84a"/>
-      <rect x="0" y="141" width="15" height="3" fill="#1fa84a"/>
-      <rect x="18" y="141" width="3" height="3" fill="#1fa84a"/>
-      <rect x="6" y="144" width="15" height="3" fill="#1fa84a"/>
-      <rect x="6" y="147" width="9" height="3" fill="#1fa84a"/>
-      <rect x="6" y="150" width="9" height="3" fill="#1fa84a"/>
-      <rect x="6" y="153" width="9" height="3" fill="#1fa84a"/>
+      values="900 0; -75 0" dur="4s" begin="0s" repeatCount="indefinite"/>
+    <rect x="10" y="135" width="15" height="5" fill="#1fa84a"/>
+      <rect x="10" y="140" width="15" height="5" fill="#1fa84a"/>
+      <rect x="0" y="145" width="5" height="5" fill="#1fa84a"/>
+      <rect x="10" y="145" width="15" height="5" fill="#1fa84a"/>
+      <rect x="0" y="150" width="5" height="5" fill="#1fa84a"/>
+      <rect x="10" y="150" width="15" height="5" fill="#1fa84a"/>
+      <rect x="30" y="150" width="5" height="5" fill="#1fa84a"/>
+      <rect x="0" y="155" width="25" height="5" fill="#1fa84a"/>
+      <rect x="30" y="155" width="5" height="5" fill="#1fa84a"/>
+      <rect x="10" y="160" width="25" height="5" fill="#1fa84a"/>
+      <rect x="10" y="165" width="15" height="5" fill="#1fa84a"/>
+      <rect x="10" y="170" width="15" height="5" fill="#1fa84a"/>
+      <rect x="10" y="175" width="15" height="5" fill="#1fa84a"/>
   </g>
   
   <g transform="translate(900 0)">
     <animateTransform attributeName="transform" type="translate"
-      values="900 0; -61 0" dur="4s" begin="-2s" repeatCount="indefinite"/>
-    <rect x="6" y="129" width="9" height="3" fill="#1fa84a"/>
-      <rect x="6" y="132" width="9" height="3" fill="#1fa84a"/>
-      <rect x="0" y="135" width="3" height="3" fill="#1fa84a"/>
-      <rect x="6" y="135" width="9" height="3" fill="#1fa84a"/>
-      <rect x="0" y="138" width="3" height="3" fill="#1fa84a"/>
-      <rect x="6" y="138" width="9" height="3" fill="#1fa84a"/>
-      <rect x="18" y="138" width="3" height="3" fill="#1fa84a"/>
-      <rect x="0" y="141" width="15" height="3" fill="#1fa84a"/>
-      <rect x="18" y="141" width="3" height="3" fill="#1fa84a"/>
-      <rect x="6" y="144" width="15" height="3" fill="#1fa84a"/>
-      <rect x="6" y="147" width="9" height="3" fill="#1fa84a"/>
-      <rect x="6" y="150" width="9" height="3" fill="#1fa84a"/>
-      <rect x="6" y="153" width="9" height="3" fill="#1fa84a"/>
+      values="900 0; -75 0" dur="4s" begin="-2s" repeatCount="indefinite"/>
+    <rect x="10" y="135" width="15" height="5" fill="#1fa84a"/>
+      <rect x="10" y="140" width="15" height="5" fill="#1fa84a"/>
+      <rect x="0" y="145" width="5" height="5" fill="#1fa84a"/>
+      <rect x="10" y="145" width="15" height="5" fill="#1fa84a"/>
+      <rect x="0" y="150" width="5" height="5" fill="#1fa84a"/>
+      <rect x="10" y="150" width="15" height="5" fill="#1fa84a"/>
+      <rect x="30" y="150" width="5" height="5" fill="#1fa84a"/>
+      <rect x="0" y="155" width="25" height="5" fill="#1fa84a"/>
+      <rect x="30" y="155" width="5" height="5" fill="#1fa84a"/>
+      <rect x="10" y="160" width="25" height="5" fill="#1fa84a"/>
+      <rect x="10" y="165" width="15" height="5" fill="#1fa84a"/>
+      <rect x="10" y="170" width="15" height="5" fill="#1fa84a"/>
+      <rect x="10" y="175" width="15" height="5" fill="#1fa84a"/>
   </g>
 
   <!-- dino -->
   <g transform="translate(70 0)">
     <animateTransform attributeName="transform" type="translate"
-      values="70 0; 70 0; 70 -42; 70 -48; 70 -42; 70 0; 70 0; 70 -42; 70 -48; 70 -42; 70 0" keyTimes="0; 0.12; 0.20; 0.28; 0.38; 0.50; 0.62; 0.70; 0.78; 0.88; 1" dur="4s"
+      values="70 0; 70 0; 70 -54; 70 -60; 70 -54; 70 0; 70 0; 70 -54; 70 -60; 70 -54; 70 0; 70 0" keyTimes="0; 0.19; 0.25; 0.325; 0.40; 0.46; 0.69; 0.75; 0.825; 0.90; 0.96; 1" dur="4s"
       repeatCount="indefinite" begin="0s"/>
-    <rect x="114" y="56" width="40" height="4" fill="#3ee06a"/>
-    <rect x="110" y="60" width="44" height="4" fill="#3ee06a"/>
-    <rect x="110" y="64" width="12" height="4" fill="#3ee06a"/>
-    <rect x="126" y="64" width="28" height="4" fill="#3ee06a"/>
-    <rect x="110" y="68" width="44" height="4" fill="#3ee06a"/>
-    <rect x="110" y="72" width="44" height="4" fill="#3ee06a"/>
-    <rect x="110" y="76" width="36" height="4" fill="#3ee06a"/>
-    <rect x="110" y="80" width="40" height="4" fill="#3ee06a"/>
-    <rect x="114" y="84" width="28" height="4" fill="#3ee06a"/>
-    <rect x="114" y="88" width="24" height="4" fill="#3ee06a"/>
-    <rect x="114" y="92" width="24" height="4" fill="#3ee06a"/>
-    <rect x="70" y="96" width="4" height="4" fill="#3ee06a"/>
-    <rect x="114" y="96" width="24" height="4" fill="#3ee06a"/>
-    <rect x="70" y="100" width="8" height="4" fill="#3ee06a"/>
-    <rect x="114" y="100" width="24" height="4" fill="#3ee06a"/>
-    <rect x="70" y="104" width="12" height="4" fill="#3ee06a"/>
-    <rect x="110" y="104" width="28" height="4" fill="#3ee06a"/>
-    <rect x="70" y="108" width="16" height="4" fill="#3ee06a"/>
-    <rect x="106" y="108" width="32" height="4" fill="#3ee06a"/>
-    <rect x="70" y="112" width="20" height="4" fill="#3ee06a"/>
-    <rect x="98" y="112" width="40" height="4" fill="#3ee06a"/>
-    <rect x="70" y="116" width="68" height="4" fill="#3ee06a"/>
-    <rect x="78" y="120" width="56" height="4" fill="#3ee06a"/>
-    <rect x="82" y="124" width="48" height="4" fill="#3ee06a"/>
-    <rect x="86" y="128" width="40" height="4" fill="#3ee06a"/>
-    <rect x="86" y="132" width="40" height="4" fill="#3ee06a"/>
-    <rect x="86" y="136" width="40" height="4" fill="#3ee06a"/>
-    <rect x="134" y="104" width="12" height="8" fill="#3ee06a"/>
+    <rect x="114" y="80" width="40" height="4" fill="#3ee06a"/>
+    <rect x="110" y="84" width="44" height="4" fill="#3ee06a"/>
+    <rect x="110" y="88" width="12" height="4" fill="#3ee06a"/>
+    <rect x="126" y="88" width="28" height="4" fill="#3ee06a"/>
+    <rect x="110" y="92" width="44" height="4" fill="#3ee06a"/>
+    <rect x="110" y="96" width="44" height="4" fill="#3ee06a"/>
+    <rect x="110" y="100" width="36" height="4" fill="#3ee06a"/>
+    <rect x="110" y="104" width="40" height="4" fill="#3ee06a"/>
+    <rect x="114" y="108" width="28" height="4" fill="#3ee06a"/>
+    <rect x="114" y="112" width="24" height="4" fill="#3ee06a"/>
+    <rect x="114" y="116" width="24" height="4" fill="#3ee06a"/>
+    <rect x="70" y="120" width="4" height="4" fill="#3ee06a"/>
+    <rect x="114" y="120" width="24" height="4" fill="#3ee06a"/>
+    <rect x="70" y="124" width="8" height="4" fill="#3ee06a"/>
+    <rect x="114" y="124" width="24" height="4" fill="#3ee06a"/>
+    <rect x="70" y="128" width="12" height="4" fill="#3ee06a"/>
+    <rect x="110" y="128" width="28" height="4" fill="#3ee06a"/>
+    <rect x="70" y="132" width="16" height="4" fill="#3ee06a"/>
+    <rect x="106" y="132" width="32" height="4" fill="#3ee06a"/>
+    <rect x="70" y="136" width="20" height="4" fill="#3ee06a"/>
+    <rect x="98" y="136" width="40" height="4" fill="#3ee06a"/>
+    <rect x="70" y="140" width="68" height="4" fill="#3ee06a"/>
+    <rect x="78" y="144" width="56" height="4" fill="#3ee06a"/>
+    <rect x="82" y="148" width="48" height="4" fill="#3ee06a"/>
+    <rect x="86" y="152" width="40" height="4" fill="#3ee06a"/>
+    <rect x="86" y="156" width="40" height="4" fill="#3ee06a"/>
+    <rect x="86" y="160" width="40" height="4" fill="#3ee06a"/>
+    <rect x="134" y="128" width="12" height="8" fill="#3ee06a"/>
     
-    <rect x="86" y="140" width="16" height="16" fill="#3ee06a">
-      <animate attributeName="y" values="140;136;140"
+    <rect x="86" y="164" width="16" height="16" fill="#3ee06a">
+      <animate attributeName="y" values="164;160;164"
                dur="0.24s" repeatCount="indefinite" begin="0s"/>
     </rect>
-    <rect x="110" y="140" width="16" height="16" fill="#3ee06a">
-      <animate attributeName="y" values="136;140;136"
+    <rect x="110" y="164" width="16" height="16" fill="#3ee06a">
+      <animate attributeName="y" values="160;164;160"
                dur="0.24s" repeatCount="indefinite" begin="0s"/>
     </rect>
   </g>

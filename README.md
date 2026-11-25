@@ -1,7 +1,7 @@
 # Salam, mən Orkhan! 👋
 
 <p align="center">
-  <img src="dist/trex-run.svg" alt="Chrome dino style T-Rex animation" width="820"/>
+  <img src="https://raw.githubusercontent.com/orkhanhuseynov04/orkhanhuseynov04/main/dist/trex-run.svg?v=2" alt="Chrome dino style T-Rex animation" width="820"/>
 </p>
 
 ## Haqqımda

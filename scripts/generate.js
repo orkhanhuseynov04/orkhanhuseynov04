@@ -186,5 +186,4 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
 const outDir = path.join(__dirname, "..", "dist");
 fs.mkdirSync(outDir, { recursive: true });
 fs.writeFileSync(path.join(outDir, "trex-run.svg"), svg);
-fs.writeFileSync(path.join(__dirname, "trex.svg"), svg);
 console.log("wrote dist/trex-run.svg", svg.length, "bytes");
